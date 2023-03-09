@@ -19,11 +19,11 @@ esac
 shift
 
 if [ $# -lt 1 ]; then
-  echo -e "WARNING!!\nYou need to pass the TELEGRAM_BOT_TOKEN environment variable as the second argument to this script.\nFor details & guide, visit: https://github.com/athasamid/gitlab-ci-webhook" && exit
+  echo -e "WARNING!!\nYou need to pass the TELEGRAM_BOT_TOKEN environment variable as the second argument to this script.\nFor details & guide" && exit
 fi
 
 if [ $# -lt 2 ]; then
-  echo -e "WARNING!!\nYou need to pass the chat_id environment variable as the second argument to this script.\nFor details & guide, visit: https://github.com/athasamid/gitlab-ci-webhook" && exit
+  echo -e "WARNING!!\nYou need to pass the chat_id environment variable as the second argument to this script.\nFor details & guide" && exit
 fi
 
 AUTHOR_NAME="$(git log -1 "$CI_COMMIT_SHA" --pretty="%aN")"
