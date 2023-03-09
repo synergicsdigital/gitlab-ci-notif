@@ -10,7 +10,7 @@ stages:
 success_notification:
     stage: notification
     script:
-        - wget https://raw.githubusercontent.com/athasamid/gitlab-ci-notification/master/telegram.sh
+        - wget https://raw.githubusercontent.com/synergicsdigital/gitlab-ci-notif/main/telegram.sh
         - chmod +x telegram.sh
         - ./telegram.sh success $BOT_TOKEN $CHAT_ID
     when: on_success
@@ -18,7 +18,7 @@ success_notification:
 failure_notification:
     stage: notification
     script:
-        - wget https://raw.githubusercontent.com/athasamid/gitlab-ci-notification/master/telegram.sh
+        - wget https://raw.githubusercontent.com/synergicsdigital/gitlab-ci-notif/main/telegram.sh
         - chmod +x telegram.sh
         - ./telegram.sh failure $BOT_TOKEN $CHAT_ID
     when: on_failure
