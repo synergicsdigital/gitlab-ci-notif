@@ -3,7 +3,7 @@
 case $1 in
 	"success" )
 	  STATUS_MESSAGE="Passed"
-	  STATUS_EMOTICON="✔️"
+	  STATUS_EMOTICON="✅"
 	  ARTIFACT_URL="$CI_JOB_URL/artifacts/download"
 	  ;;
 	"failure" )
